@@ -1,0 +1,78 @@
+DEBUG:    graphchi_engine.hpp(run:882): Allocation 138178 vertices, sizeof:64 total:8843392
+DEBUG:    memoryshard.hpp(load_edata:327): Compressed/full size: 0.027894 number of blocks: 5
+INFO:     graphchi_engine.hpp(run:891): Start updates
+INFO:     graphchi_engine.hpp(run:901): Finished updates
+INFO:     graphchi_engine.hpp(run:775): Start iteration: 546
+INFO:     graphchi_engine.hpp(run:854): 118.646s: Starting: 0 -- 143725
+INFO:     graphchi_engine.hpp(run:867): Iteration 546/999, subinterval: 0 - 143725
+INFO:     graphchi_engine.hpp(run:871): No vertices scheduled, skip.
+INFO:     graphchi_engine.hpp(run:854): 118.648s: Starting: 143726 -- 281903
+INFO:     graphchi_engine.hpp(run:867): Iteration 546/999, subinterval: 143726 - 281903
+DEBUG:    graphchi_engine.hpp(run:882): Allocation 138178 vertices, sizeof:64 total:8843392
+DEBUG:    memoryshard.hpp(load_edata:327): Compressed/full size: 0.0278934 number of blocks: 5
+INFO:     graphchi_engine.hpp(run:891): Start updates
+INFO:     graphchi_engine.hpp(run:901): Finished updates
+Converged!
+DEBUG:    graphchi_engine.hpp(run:950): Last iteration is now: 546
+INFO:     stripedio.hpp(~block_cache:170): Cache stats: hits=0 misses=6713
+INFO:     stripedio.hpp(~block_cache:171):  -- in total had 0 MB in cache.
+DEBUG:    stripedio.hpp(stripedio:271): Start io-manager with 2 threads.
+Total number of different labels (components/communities): 365
+List of labels was written to file: ../data/web-Stanford.txt.components
+1. label: 1, size: 255265
+2. label: 136, size: 755
+3. label: 48, size: 670
+4. label: 18, size: 628
+5. label: 1158, size: 614
+6. label: 542, size: 601
+7. label: 46, size: 554
+8. label: 36, size: 525
+9. label: 301, size: 524
+10. label: 134, size: 508
+11. label: 10, size: 508
+12. label: 341, size: 476
+13. label: 1025, size: 472
+14. label: 107, size: 466
+15. label: 162, size: 448
+16. label: 141, size: 432
+17. label: 54, size: 414
+18. label: 585, size: 409
+19. label: 556, size: 400
+20. label: 497, size: 389
+
+ === REPORT FOR connected-components() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		4
+loadthreads:		4
+membudget_mb:		100
+niothreads:		2
+niters:		547
+nshards:		2
+nvertices:		281904
+scheduler:		1
+serialized-updates:		927354	(count: 993, min: 0, max: 134119, avg: 933.891)
+stripesize:		1.07374e+09
+updates:		1.08566e+06
+work:		1.66715e+07
+[Timings]
+blockload:		2.41436s	 (count: 3075, min: 7e-06s, max: 0.009249, avg: 0.000785159s)
+commit:		11.102s	 (count: 1748, min: 0.002119s, max: 0.054626, avg: 0.00635129s)
+commit_thr:		9.00427s	 (count: 984, min: 0.005136s, max: 0.059444, avg: 0.00915068s)
+execute-updates:		7.34187s	 (count: 993, min: 0.003122s, max: 0.099844, avg: 0.00739363s)
+iomgr_init:		0.000229 s
+label-analysis:		0.050451 s
+memoryshard_create_edges:		45.1635s	 (count: 993, min: 0.034649s, max: 0.175789, avg: 0.0454819s)
+memshard_commit:		17.3157s	 (count: 993, min: 0.011853s, max: 0.04351, avg: 0.0174378s)
+preada_now:		7.72865s	 (count: 6155, min: 6e-06s, max: 0.012053, avg: 0.00125567s)
+pwritea_now:		39.1159s	 (count: 6722, min: 0.000275s, max: 0.054618, avg: 0.00581908s)
+read_next_vertices:		8.68632s	 (count: 993, min: 0.005118s, max: 0.05277, avg: 0.00874756s)
+runtime:		118.806 s
+stripedio_wait_for_reads:		4.16232s	 (count: 993, min: 0s, max: 0.030412, avg: 0.00419166s)
+stripedio_wait_for_writes:		9.72157s	 (count: 1642, min: 0s, max: 0.060555, avg: 0.00592057s)
+[Other]
+app:	connected-components
+engine:	default
+file:	../data/web-Stanford.txt
+

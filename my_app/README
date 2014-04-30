@@ -1,0 +1,16 @@
+4.21
+	realize block component, there are others' ways, like another process by obtaining edgelist information;
+ 	this method use memory but quick
+
+4.22
+        repair bug about scheduler:
+		scheduler need to be open before declaration of engine(filename,nshards,scheduler,metric m);
+		but I declare local scheduler instead of global scheduler
+	repair blockconnectedcomponent:
+		disable scheduler,otherwise the result will be wrong
+
+	custom error about scheduler: no task to added
+
+	repair blockconnectedcomponent:
+		problem: can not converged quickly
+		solve: merge every two component between an edge

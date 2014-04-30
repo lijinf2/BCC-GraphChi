@@ -1,0 +1,60 @@
+Total number of different labels (components/communities): 25399
+List of labels was written to file: ../data/blodata/USA-road-d.NY.gr.components
+1. label: 241961, size: 157
+2. label: 186812, size: 134
+3. label: 140293, size: 130
+4. label: 11883, size: 124
+5. label: 35534, size: 124
+6. label: 132602, size: 120
+7. label: 134200, size: 117
+8. label: 143938, size: 117
+9. label: 217998, size: 117
+10. label: 56843, size: 111
+11. label: 194948, size: 111
+12. label: 35717, size: 108
+13. label: 194678, size: 106
+14. label: 103427, size: 106
+15. label: 235632, size: 105
+16. label: 194968, size: 104
+17. label: 120224, size: 103
+18. label: 237880, size: 102
+19. label: 215269, size: 101
+20. label: 198896, size: 101
+
+ === REPORT FOR my-application-name() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		1
+loadthreads:		4
+membudget_mb:		10
+niothreads:		2
+niters:		21
+nshards:		8
+nvertices:		264347
+scheduler:		0
+stripesize:		1.07374e+09
+updates:		6.34433e+06
+work:		3.52246e+07
+[Timings]
+blockload:		0.439886s	 (count: 504, min: 3e-06s, max: 0.153114, avg: 0.00087279s)
+commit:		2.85701s	 (count: 312, min: 0.000638s, max: 0.022664, avg: 0.00915708s)
+commit_thr:		0.056094s	 (count: 24, min: 0.001154s, max: 0.003615, avg: 0.00233725s)
+execute-updates:		1.95639s	 (count: 192, min: 0.002458s, max: 0.068874, avg: 0.0101896s)
+iomgr_init:		0.00026 s
+memoryshard_create_edges:		1.3981s	 (count: 192, min: 0.004088s, max: 0.014403, avg: 0.0072818s)
+memshard_commit:		3.91129s	 (count: 192, min: 0.016509s, max: 0.034594, avg: 0.0203713s)
+preada_now:		1.01745s	 (count: 1080, min: 2e-06s, max: 0.153106, avg: 0.00094208s)
+pwritea_now:		6.78728s	 (count: 880, min: 0.00022s, max: 0.033371, avg: 0.00771282s)
+read_next_vertices:		0.52051s	 (count: 1344, min: 1e-06s, max: 0.153642, avg: 0.000387284s)
+runtime:		20.4334s	 (count: 4, min: 0.776016s, max: 17.2173, avg: 5.10834s)
+stripedio_wait_for_reads:		8.86968s	 (count: 192, min: 0.010071s, max: 0.192103, avg: 0.0461963s)
+stripedio_wait_for_writes:		0.000288s	 (count: 220, min: 0s, max: 3e-06, avg: 1.30909e-06s)
+[Other]
+app:	my-application-name
+engine:	default
+file:	../data/blodata/USA-road-d.NY.gr
+INFO:     stripedio.hpp(~block_cache:170): Cache stats: hits=0 misses=715
+INFO:     stripedio.hpp(~block_cache:171):  -- in total had 0 MB in cache.
+guapi@guapi-K42Jc:~/Desktop/Project Graphchi/graphchi-cpp-master$ 
+

@@ -1,0 +1,60 @@
+#first time
+bin/my_app/twodpartition file ../data/blodata/FLA/USA-road-d.FLA.gr membudget_mb 100 coordinate ../data/blodata/FLA/USA-road-d.FLA.co sampleRate 0.1 niters 100 scheduler 1  xnum 100 ynum 100
+
+List of labels was written to file: ../data/blodata/FLA/USA-road-d.FLA.gr.components
+1. label: 210882, size: 4998
+2. label: 787701, size: 4787
+3. label: 662936, size: 3859
+4. label: 72800, size: 3213
+5. label: 331753, size: 2879
+6. label: 245905, size: 2453
+7. label: 987154, size: 2391
+8. label: 332959, size: 2292
+9. label: 566376, size: 2279
+10. label: 567544, size: 2172
+11. label: 465385, size: 2130
+12. label: 518416, size: 1971
+13. label: 1658, size: 1841
+14. label: 831061, size: 1762
+15. label: 438351, size: 1602
+16. label: 567177, size: 1458
+17. label: 565031, size: 1423
+18. label: 330480, size: 1377
+19. label: 920411, size: 1325
+20. label: 72811, size: 1306
+
+ === REPORT FOR my-application-name() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		1
+loadthreads:		4
+membudget_mb:		100
+niothreads:		2
+niters:		100
+nshards:		3
+nvertices:		1.07038e+06
+scheduler:		1
+stripesize:		1.07374e+09
+updates:		4.28151e+06
+work:		2.17024e+07
+[Timings]
+blockload:		0.009625s	 (count: 24, min: 7e-06s, max: 0.001579, avg: 0.000401042s)
+commit:		0.241623s	 (count: 16, min: 0.006845s, max: 0.030011, avg: 0.0151014s)
+execute-updates:		0.821977s	 (count: 12, min: 0.022116s, max: 0.15657, avg: 0.0684981s)
+iomgr_init:		0.000175 s
+memoryshard_create_edges:		0.818996s	 (count: 12, min: 0.056208s, max: 0.089102, avg: 0.0682497s)
+memshard_commit:		2.65031s	 (count: 12, min: 0.213168s, max: 0.235439, avg: 0.220859s)
+preada_now:		0.094707s	 (count: 60, min: 5e-06s, max: 0.004495, avg: 0.00157845s)
+pwritea_now:		2.89244s	 (count: 157, min: 0.002757s, max: 0.031535, avg: 0.0184232s)
+read_next_vertices:		0.034861s	 (count: 24, min: 0.000221s, max: 0.004835, avg: 0.00145254s)
+runtime:		5.26412s	 (count: 4, min: 1.20363s, max: 1.55512, avg: 1.31603s)
+stripedio_wait_for_reads:		0.231937s	 (count: 12, min: 1e-06s, max: 0.030277, avg: 0.0193281s)
+stripedio_wait_for_writes:		3e-05s	 (count: 20, min: 1e-06s, max: 4e-06, avg: 1.5e-06s)
+[Other]
+app:	my-application-name
+engine:	default
+file:	../data/blodata/FLA/USA-road-d.FLA.gr
+INFO:     stripedio.hpp(~block_cache:170): Cache stats: hits=0 misses=148
+INFO:     stripedio.hpp(~block_cache:171):  -- in total had 0 MB in cache.
+

@@ -1,0 +1,59 @@
+bin/example_apps/connectedcomponents file ../data/blodata/FLA/USA-road-d.FLA.gr membudget_mb 100 scheduler 1  niters 1000
+
+List of labels was written to file: ../data/blodata/FLA/USA-road-d.FLA.gr.components
+1. label: 210882, size: 4998
+2. label: 787701, size: 4787
+3. label: 662936, size: 3859
+4. label: 72800, size: 3213
+5. label: 331753, size: 2879
+6. label: 245905, size: 2453
+7. label: 987154, size: 2391
+8. label: 332959, size: 2292
+9. label: 566376, size: 2279
+10. label: 567544, size: 2172
+11. label: 465385, size: 2130
+12. label: 518416, size: 1971
+13. label: 1658, size: 1841
+14. label: 831061, size: 1762
+15. label: 438351, size: 1602
+16. label: 567177, size: 1458
+17. label: 565031, size: 1423
+18. label: 330480, size: 1377
+19. label: 920411, size: 1325
+20. label: 72811, size: 1306
+
+ === REPORT FOR connected-components() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		4
+loadthreads:		4
+membudget_mb:		100
+niothreads:		2
+niters:		185
+nshards:		2
+nvertices:		1.07038e+06
+scheduler:		1
+serialized-updates:		2.40592e+06	(count: 309, min: 0, max: 534991, avg: 7786.15)
+stripesize:		1.07374e+09
+updates:		2.96659e+06
+work:		1.54839e+07
+[Timings]
+blockload:		0.34491s	 (count: 606, min: 1e-05s, max: 0.003687, avg: 0.000569158s)
+commit:		0.820903s	 (count: 112, min: 0.002043s, max: 0.022146, avg: 0.00732949s)
+execute-updates:		11.4032s	 (count: 309, min: 0.023544s, max: 0.070579, avg: 0.0369037s)
+iomgr_init:		0.000265 s
+label-analysis:		0.250644 s
+memoryshard_create_edges:		11.7383s	 (count: 309, min: 0.030921s, max: 0.084998, avg: 0.0379882s)
+memshard_commit:		10.2965s	 (count: 309, min: 0.025863s, max: 0.062273, avg: 0.033322s)
+preada_now:		2.39397s	 (count: 1594, min: 7e-06s, max: 0.006166, avg: 0.00150186s)
+pwritea_now:		25.981s	 (count: 2275, min: 0.001165s, max: 0.05101, avg: 0.0114202s)
+read_next_vertices:		0.959195s	 (count: 309, min: 0.00051s, max: 0.014502, avg: 0.00310419s)
+runtime:		53.4207 s
+stripedio_wait_for_reads:		3.7071s	 (count: 309, min: 1e-06s, max: 0.040471, avg: 0.0119971s)
+stripedio_wait_for_writes:		0.000632s	 (count: 556, min: 0s, max: 4e-06, avg: 1.13669e-06s)
+[Other]
+app:	connected-components
+engine:	default
+file:	../data/blodata/FLA/USA-road-d.FLA.gr
+

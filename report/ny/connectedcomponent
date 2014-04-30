@@ -1,0 +1,59 @@
+#first time
+Total number of different labels (components/communities): 10382
+List of labels was written to file: ../data/blodata/USA-road-d.NY.gr.components
+1. label: 139759, size: 8097
+2. label: 139765, size: 3952
+3. label: 35493, size: 3889
+4. label: 37485, size: 2752
+5. label: 35482, size: 2034
+6. label: 41457, size: 1860
+7. label: 132588, size: 1836
+8. label: 56838, size: 1822
+9. label: 160146, size: 1543
+10. label: 9080, size: 1504
+11. label: 6516, size: 1443
+12. label: 117974, size: 1409
+13. label: 27432, size: 1392
+14. label: 161300, size: 1383
+15. label: 139777, size: 1382
+16. label: 35495, size: 1321
+17. label: 9030, size: 1312
+18. label: 139771, size: 1302
+19. label: 6522, size: 1272
+20. label: 188980, size: 1207
+
+ === REPORT FOR connected-components() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		4
+loadthreads:		4
+membudget_mb:		10
+niothreads:		2
+niters:		177
+nshards:		3
+nvertices:		264347
+scheduler:		1
+serialized-updates:		602225	(count: 744, min: 0, max: 60602, avg: 809.442)
+stripesize:		1.07374e+09
+updates:		782580
+work:		4.48406e+06
+[Timings]
+blockload:		0.47949s	 (count: 710, min: 1.3e-05s, max: 0.004378, avg: 0.000675338s)
+commit:		2.8661s	 (count: 322, min: 0.007336s, max: 0.025522, avg: 0.00890094s)
+execute-updates:		4.41235s	 (count: 744, min: 0.000987s, max: 0.022038, avg: 0.00593058s)
+iomgr_init:		7.8e-05 s
+label-analysis:		0.050235 s
+memoryshard_create_edges:		5.04392s	 (count: 744, min: 0.003831s, max: 0.022486, avg: 0.00677946s)
+memshard_commit:		5.86765s	 (count: 480, min: 0.007597s, max: 0.023775, avg: 0.0122243s)
+preada_now:		1.17353s	 (count: 2996, min: 1.1e-05s, max: 0.004371, avg: 0.000391698s)
+pwritea_now:		8.51579s	 (count: 1546, min: 5.2e-05s, max: 0.025515, avg: 0.00550827s)
+read_next_vertices:		0.632005s	 (count: 1488, min: 2e-06s, max: 0.007821, avg: 0.000424735s)
+runtime:		38.9244 s
+stripedio_wait_for_reads:		15.6818s	 (count: 744, min: 0s, max: 0.060942, avg: 0.0210777s)
+stripedio_wait_for_writes:		0.000835s	 (count: 709, min: 0s, max: 3e-06, avg: 1.17772e-06s)
+[Other]
+app:	connected-components
+engine:	default
+file:	../data/blodata/USA-road-d.NY.gr
+
